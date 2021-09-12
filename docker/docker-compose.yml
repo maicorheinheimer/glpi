@@ -30,7 +30,7 @@ services:
           MARIADB_USER: glpi-user
           MARIADB_PASSWORD: glpi-pass
           VERSION: "9.5.5"
-          PLUGINS: "all"
+          PLUGINS: "fusioninventory|https://github.com/fusioninventory/fusioninventory-for-glpi/releases/download/glpi9.5%2B3.0/fusioninventory-9.5+3.0.tar.bz2\"
         depends_on: 
           - mariadb-glpi
         ports: 
